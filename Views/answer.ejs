@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Answers</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="/assets/anslist.js"></script>
+</head>
+<body>
+
+  <% for(var i=0; i < answers.length ; ++i){ %>
+    <li id="<%= answers[i]._id %>"><%= answers[i].aname %>   <%= answers[i].adetail %></li>
+   <% } %>
+
+   <a href="addAnswer.ejs">Add New Answer</a>
+</body>
+</html>

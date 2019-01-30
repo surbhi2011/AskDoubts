@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Questions</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="/assets/quelist.js"></script>
+
+</head>
+<body>
+<ul>
+<li>qheuh</li>
+  <% for(var i=0; i < ques.length ; ++i){ %>
+    <li id="<%= ques[i]._id %>"><%= ques[i].qname %>   <%= ques[i].qdetail %>
+    <a href="#" id="<%= ques[i]._id %>">Delete</a></li>
+   <% } %>
+</ul>
+   <a href="/Questions/addQuestion">Add New Question </a>
+</body>
+</html>

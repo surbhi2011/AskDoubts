@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Users</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="/assets/userlist.js"></script>
+  <!-- <script>
+    function clicks(){
+      $.ajax({
+        type: 'POST',
+        url: '/Users',
+        success: function(data){
+          //do something with the data via front-end framework
+          //location.reload();
+          alert('added');
+        }
+      });
+    }
+  </script> -->
+</head>
+<body>
+<ul>
+  <li>dbuhnc</li>
+  <li><%= users.length %></li>
+</ul>
+   <a href="/Users/adduser">Add New User </a>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Users</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="/assets/userlist.js"></script>
+</head>
+<body>
+
+
+  <% for(var i=0; i < users.length ; ++i){ %>
+    <li id="<%= users[i]._id %>"><%= users[i].name %></li>
+   <% } %>
+
+   <a href="adduser.ejs">Add New User </a>
+</body>
+</html>
